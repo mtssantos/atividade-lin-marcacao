@@ -4,7 +4,7 @@ body{
 }
 .navbar-brand > img{
     width: 200px;
-    margin-left: 80px;
+    padding-left: 20px;
     margin-top: 10px;
 }
 .navbar{
@@ -14,10 +14,12 @@ body{
     padding: 0px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .navbar > ul{
     list-style-type: none;
     display: flex;
+    padding-right: 20px;
 }
 .navbar > ul > li{
     padding-left: 15px;
@@ -35,9 +37,17 @@ body{
     margin-left:auto;
     text-align: center;
 }
+.content >  h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;   
+}
 .area-container{
     display: inline-grid;
     grid-template-columns: 600px 600px 600px;
+}
+.cards{
+    display: inline-grid;
+    grid-template-columns: 450px 450px 450px; 
 }
 .card{
     font-family: 'Roboto', sans-serif;
@@ -69,19 +79,15 @@ body{
 
 footer{
     background-color: #9bd2fa;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    bottom: 0px;
-    position: absolute;
     border-top:solid #000 2px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 .footer-container{
-    display: block;
-    margin-right:auto;
-    margin-left:auto;
     padding-right: 2.5em;
     padding-left: 2.5em;
+    padding-bottom: 2em;
     font-family: 'Roboto', sans-serif;
     text-align: justify;
 }
@@ -89,3 +95,315 @@ footer{
 .footer-container > p{
     text-indent: 3em;
 }
+
+@media (max-width: 520px) {
+    .navbar-brand > img{
+        width: 150px;
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+    .navbar > ul{
+        list-style-type: none;
+        display: flex;
+    }
+    .navbar > ul > li{
+        padding-left: 15px;
+    }
+    .navbar > ul > li > a{
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: black;
+    }
+    .area-container{
+        display: block;
+        grid-template-columns: 600px 600px 600px;
+    }
+    .cards{
+        display: block;
+        grid-template-columns: 350px 350px 350px; 
+    }
+    .card{
+        font-family: 'Roboto', sans-serif;
+        text-align: justify;
+    }
+    .card > .card-header > h3{
+        font-size: 18px;
+    }
+    .card > p{
+        text-indent: 1.5em;
+    }
+    footer{
+        background-color: #9bd2fa;
+        border-top:solid #000 2px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    
+}
+@media (max-width: 768px) {
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .navbar{
+        background-color: #9bd2fa;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+    }
+    .navbar > ul{
+        list-style-type: none;
+        display: flex;
+    }
+    .navbar > ul > li{
+        padding-left: 15px;
+    }
+    .navbar > ul > li > a{
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: black;
+    }
+    .area-container{
+        display: block;
+        grid-template-columns: 600px 600px 600px;
+    }
+    .cards{
+        display: block;
+        grid-template-columns: 350px 350px 350px; 
+    }
+    .card{
+        font-family: 'Roboto', sans-serif;
+        text-align: justify;
+    }
+    .card > .card-header > h3{
+        font-size: 18px;
+    }
+    .card > p{
+        text-indent: 2em;
+    }
+    footer{
+        background-color: #9bd2fa;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        border-top:solid #000 2px;
+    }
+}
+
+@media (max-width: 992px) {
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .navbar{
+        background-color: #9bd2fa;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+    }
+    .navbar > ul{
+        list-style-type: none;
+        display: flex;
+    }
+    .navbar > ul > li{
+        padding-left: 15px;
+    }
+    .navbar > ul > li > a{
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: black;
+    }
+    .area-container{
+        display: block;
+        grid-template-columns: 600px 600px 600px;
+    }
+
+    .cards{
+        display: block;
+        grid-template-columns: 350px 350px 350px; 
+    }
+    .card{
+        font-family: 'Roboto', sans-serif;
+        text-align: justify;
+    }
+    .card > .card-header > h3{
+        font-size: 18px;
+    }
+    .card > p{
+        text-indent: 2em;
+    }
+    footer{
+        background-color: #9bd2fa;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        border-top:solid #000 2px;
+    }
+}
+
+@media (max-width: 1280px) {
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .navbar{
+        background-color: #9bd2fa;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+    }
+    .navbar > ul{
+        list-style-type: none;
+        display: flex;
+    }
+    .navbar > ul > li{
+        padding-left: 15px;
+    }
+    .navbar > ul > li > a{
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: black;
+    }
+    .area-container{
+        display: block;
+        grid-template-columns: 600px 600px 600px;
+    }
+    .cards{
+        display: block;
+        grid-template-columns: 350px 350px 350px; 
+    }
+    .card{
+        font-family: 'Roboto', sans-serif;
+        text-align: justify;
+    }
+    .card > .card-header > h3{
+        font-size: 18px;
+    }
+    .card > p{
+        text-indent: 2em;
+    }
+    footer{
+        background-color: #9bd2fa;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        border-top:solid #000 2px;
+    }
+}
+
+@media (min-width: 1360px){
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .navbar-brand > img{
+        width: 200px;
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+    .navbar{
+        background-color: #9bd2fa;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar > ul{
+        list-style-type: none;
+        display: flex;
+        padding-right: 20px;
+    }
+    .navbar > ul > li{
+        padding-left: 15px;
+    }
+    .navbar > ul > li > a{
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        color: black;
+    }
+    .content{
+        display: block;
+        margin-right:auto;
+        margin-left:auto;
+        text-align: center;
+    }
+    .content >  h2{
+        font-family: 'Roboto', sans-serif;
+        font-size: 22px;   
+    }
+    .area-container{
+        display: inline-grid;
+        grid-template-columns: 600px 600px 600px;
+    }
+    .cards{
+        display: inline-grid;
+        grid-template-columns: 450px 450px 450px; 
+    }
+    .card{
+        font-family: 'Roboto', sans-serif;
+        text-align: justify;
+        padding: 5%; 
+    }
+    .card > ul > li{
+        list-style-type: disc;
+        margin-block-start: .3rem;
+        margin-block-end: .3rem;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 5px;
+    }
+    .card > p{
+        text-indent: 3em;
+    }
+    .picture{
+        width: 250px;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        border: solid #000 10px;
+    }
+    .picture > img{
+        width: 100%;
+        height: 100%; 
+    }
+    
+    footer{
+        background-color: #9bd2fa;
+        border-top:solid #000 2px;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+    }
+    .footer-container{
+        padding-right: 2.5em;
+        padding-left: 2.5em;
+        padding-bottom: 2em;
+        font-family: 'Roboto', sans-serif;
+        text-align: justify;
+    }
+    
+    .footer-container > p{
+        text-indent: 3em;
+    }
+}
+
